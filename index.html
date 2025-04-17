@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayhane's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="profile">
+        <img
+          src="https://scontent.ftun8-1.fna.fbcdn.net/v/t39.30808-1/475858016_1699517980976738_7660402596666919622_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tbmcqA-cHNkQ7kNvwGPxa4p&_nc_oc=AdlOyMaPJV_gvBkynOhplQ2FIJpu3k-dI9Ge8F4n47w6SynoucHHb9OLLUN9pnHD-DDxns8caVP-BRHU_1Cb4B_v&_nc_zt=24&_nc_ht=scontent.ftun8-1.fna&_nc_gid=YOD7biQMQ4trLFOF0z-7wg&oh=00_AfEndIRtS6e5WA62N8Sby2y8N4KA3VBL9k-9916OHTVjqA&oe=68074971"
+          alt="Profile Image"
+          class="profile-img"
+        />
+        <h1>Rayhane Aissa</h1>
+        <p>Data Scientist | AI Enthusiast | Problem Solver</p>
+        <a href="path-to-your-cv.pdf" class="cv-link" download>Download My CV</a>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate data scientist with experience in machine learning, data
+        analysis, and artificial intelligence. I am always eager to solve
+        real-world problems using data-driven insights. With a background in
+        mathematical engineering, I am excited to continue learning and growing
+        in the field of data science.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Programming Languages:</strong> Python, C++, Java</p>
+      <p><strong>Data Analysis & Visualization:</strong> PowerBI, Pandas, NumPy, Matplotlib, Seaborn</p>
+      <p><strong>Web Development:</strong> HTML, CSS, JavaScript</p>
+    </section>
+
+    <section id="experience">
+      <h2>Education & Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>Engineering School - Mathematical Engineering</h3>
+            <p>First-year student with strong foundation in mathematics and programming.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - 2023</div>
+          <div class="timeline-content">
+            <h3>Preparatory Classes</h3>
+            <p>Studied intensive mathematics and physics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project 1: Job Salary Prediction</h3>
+          <p>This project involves predicting job salaries based on different features using machine learning models.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project 2: Customer Behavior Analysis</h3>
+          <p>A project that explores customer data to predict behaviors and preferences, using Python and data visualization tools.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/rayhane-aissa-05a84b351/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Rayhane-aissa" target="_blank">GitHub</a>
+        <a href="mailto:a.aissarayhane@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Rayhane Aissa. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+      });
+
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for your message!');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
